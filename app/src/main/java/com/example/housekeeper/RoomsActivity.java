@@ -1,8 +1,10 @@
 package com.example.housekeeper;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.PopupMenu;
@@ -22,12 +24,19 @@ public class RoomsActivity extends AppCompatActivity {
 
     private Button status;
     private Button logout;
+    private Button menu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rooms);
         setSupportActionBar(findViewById(R.id.activity_rooms_toolbar));
+
+        androidx.appcompat.app.ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayShowCustomEnabled(true);
+        LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View view = inflater.inflate(R.layout.header_logo, null);
+        actionBar.setCustomView(view);
 
         status = findViewById(R.id.Status);
         logout = findViewById(R.id.logout);
@@ -55,6 +64,7 @@ public class RoomsActivity extends AppCompatActivity {
         });
 
 
+
         logout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -62,6 +72,11 @@ public class RoomsActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+//        menu = findViewById(R.id.hamburgerMenuImageView);
+
+
+
 
 
     }

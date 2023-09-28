@@ -2,8 +2,11 @@ package com.example.housekeeper;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Layout;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -24,10 +27,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         setSupportActionBar(findViewById(R.id.activity_main_toolbar));
 
+        androidx.appcompat.app.ActionBar actionBar = getSupportActionBar();
+        actionBar.setDisplayShowCustomEnabled(true);
+        LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View view = inflater.inflate(R.layout.header_logo, null);
+        actionBar.setCustomView(view);
+
+
         buttonLogin = findViewById(R.id.login);
         editTextPassword = findViewById(R.id.editTextTextPassword);
         editTextEmail = findViewById(R.id.editTextTextEmailAddress);
         checkBoxLogin = findViewById(R.id.checkBoxLogin);
+
+
+
+
 
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override

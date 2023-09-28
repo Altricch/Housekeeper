@@ -29,21 +29,21 @@
         tools:layout_editor_absoluteX="0dp">
 
         <TextView
-            android:id="@+id/textViewRoomNumber"
+            android:id="@+id/textViewRoomNumber6"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Room Nr.: 666" />
 
         <TextView
-            android:id="@+id/textViewGuestName"
+            android:id="@+id/textViewGuestName6"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:text="Guest Name: C. Altrichter" />
 
         <Button
-            android:id="@+id/Status"
+            android:id="@+id/Status6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Status" />
@@ -62,21 +62,21 @@
         tools:layout_editor_absoluteX="0dp">
 
         <TextView
-            android:id="@+id/textViewRoomNumber"
+            android:id="@+id/textViewRoomNumber5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Room Nr.: 555" />
 
         <TextView
-            android:id="@+id/textViewGuestName"
+            android:id="@+id/textViewGuestName5"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:text="Guest Name: Prof. Tonella" />
 
         <Button
-            android:id="@+id/Status"
+            android:id="@+id/Status5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Status" />
@@ -94,21 +94,21 @@
         tools:layout_editor_absoluteX="16dp">
 
         <TextView
-            android:id="@+id/textViewRoomNumber"
+            android:id="@+id/textViewRoomNumber4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Room Nr.: 444" />
 
         <TextView
-            android:id="@+id/textViewGuestName"
+            android:id="@+id/textViewGuestName4"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:text="Guest Name: J. D'Onofrio" />
 
         <Button
-            android:id="@+id/Status"
+            android:id="@+id/Status4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Status" />
@@ -126,21 +126,21 @@
         tools:layout_editor_absoluteX="0dp">
 
         <TextView
-            android:id="@+id/textViewRoomNumber"
+            android:id="@+id/textViewRoomNumber3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Room Nr.: 333" />
 
         <TextView
-            android:id="@+id/textViewGuestName"
+            android:id="@+id/textViewGuestName3"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:text="Guest Name: Prof. Hormann" />
 
         <Button
-            android:id="@+id/Status"
+            android:id="@+id/Status3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Status" />
@@ -190,21 +190,21 @@
         tools:layout_editor_absoluteX="0dp">
 
         <TextView
-            android:id="@+id/textViewRoomNumber"
+            android:id="@+id/textViewRoomNumber2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Room Nr.: 222" />
 
         <TextView
-            android:id="@+id/textViewGuestName"
+            android:id="@+id/textViewGuestName2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="2"
             android:text="Guest Name: Prof. Wand" />
 
         <Button
-            android:id="@+id/Status"
+            android:id="@+id/Status2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Status" />

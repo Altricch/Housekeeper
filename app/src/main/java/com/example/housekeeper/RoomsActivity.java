@@ -27,6 +27,7 @@ public class RoomsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rooms);
+        setSupportActionBar(findViewById(R.id.activity_rooms_toolbar));
 
         status = findViewById(R.id.Status);
         logout = findViewById(R.id.logout);

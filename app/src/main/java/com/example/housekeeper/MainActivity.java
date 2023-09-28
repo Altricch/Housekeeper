@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -15,21 +16,26 @@ public class MainActivity extends AppCompatActivity {
     private EditText editTextEmail;
     private EditText editTextPassword;
 
+    private CheckBox checkBoxLogin;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        setSupportActionBar(findViewById(R.id.activity_main_toolbar));
 
         buttonLogin = findViewById(R.id.login);
         editTextPassword = findViewById(R.id.editTextTextPassword);
         editTextEmail = findViewById(R.id.editTextTextEmailAddress);
+        checkBoxLogin = findViewById(R.id.checkBoxLogin);
 
         buttonLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                Intent intent = new Intent(MainActivity.this, RoomsActivity.class);
-                startActivity(intent);
+                if (checkBoxLogin.isChecked()) {
+                    Intent intent = new Intent(MainActivity.this, RoomsActivity.class);
+                    startActivity(intent);
+                }
 
 //                // Get the entered email and password
 //                String email = editTextEmail.getText().toString();

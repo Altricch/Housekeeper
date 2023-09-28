@@ -73,7 +73,7 @@ public class RoomsActivity extends AppCompatActivity {
             }
         });
 
-//        menu = findViewById(R.id.hamburgerMenuImageView);
+//        menu = findViewById(R.id.custom_button);
 
 
 

@@ -17,6 +17,16 @@
         android:theme="@style/Theme.Housekeeper"
         tools:targetApi="31">
         <activity
+            android:name=".ListActivity"
+            android:exported="false"
+            android:label="@string/title_activity_list"
+            android:theme="@style/Theme.Housekeeper.NoActionBar" />
+        <activity
+            android:name=".RoomsActivity2"
+            android:exported="false"
+            android:label="@string/title_activity_rooms2"
+            android:theme="@style/Theme.Housekeeper.NoActionBar" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -26,11 +36,9 @@
             </intent-filter>
 
         </activity>
-
         <activity
             android:name=".RoomsActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
 
 
         <activity

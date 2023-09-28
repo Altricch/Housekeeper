@@ -4,4 +4,9 @@
         <!-- Customize your dark theme here. -->
          <item name="colorPrimary">@color/black</item>
     </style>
+
+    <style name="MyDrawerArrowToggle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/white</item>
+    </style>
+
 </resources>

@@ -5,6 +5,19 @@
         <item name="colorPrimary">@color/black</item>
     </style>
 
-    <style name="Theme.Housekeeper" parent="Base.Theme.Housekeeper"/>
+    <style name="Theme.Housekeeper" parent="Base.Theme.Housekeeper" />
+
+    <style name="MyDrawerArrowToggle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/white</item>
+    </style>
+
+    <style name="Theme.Housekeeper.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.Housekeeper.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.Housekeeper.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
 </resources>

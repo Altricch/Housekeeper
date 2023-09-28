@@ -8,19 +8,19 @@
         android:layout_centerInParent="true"
         android:src="@drawable/fourseasons"/>
 
-    <ImageView
-        android:id="@+id/hamburgerMenuImageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_centerVertical="true"
-        android:src="@drawable/hamburgermenu"/>
+<!--    <ImageView-->
+<!--        android:id="@+id/hamburgerMenuImageView"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:src="@drawable/hamburgermenu"/>-->
     
-    <Button
-        android:id="@+id/custom_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/hamburgermenu"
-        />
+<!--    <Button-->
+<!--        android:id="@+id/custom_button"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@drawable/hamburgermenu"-->
+<!--        />-->
     
     </RelativeLayout>

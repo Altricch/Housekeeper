@@ -11,6 +11,9 @@ import android.widget.PopupMenu;
 import android.widget.Toast;
 import android.os.Bundle;
 import android.view.MenuItem;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 
 
@@ -18,6 +21,9 @@ import android.widget.EditText;
 
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.drawerlayout.widget.DrawerLayout;
+
+import com.google.android.material.navigation.NavigationView;
 
 public class RoomsActivity extends AppCompatActivity {
 
@@ -25,18 +31,28 @@ public class RoomsActivity extends AppCompatActivity {
     private Button status;
     private Button logout;
     private Button menu;
+    private DrawerLayout drawerLayout;
+    NavigationView navigationView;
+    ActionBarDrawerToggle drawerToggle;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_rooms);
-        setSupportActionBar(findViewById(R.id.activity_rooms_toolbar));
 
+        setSupportActionBar(findViewById(R.id.activity_rooms_toolbar));
         androidx.appcompat.app.ActionBar actionBar = getSupportActionBar();
         actionBar.setDisplayShowCustomEnabled(true);
+        actionBar.setDisplayHomeAsUpEnabled(true);
         LayoutInflater inflater = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View view = inflater.inflate(R.layout.header_logo, null);
         actionBar.setCustomView(view);
+
+        drawerLayout = findViewById(R.id.drawer_layout);
+        navigationView = findViewById(R.id.navigation_view);
+        drawerToggle = new ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close);
+        drawerLayout.addDrawerListener(drawerToggle);
+        drawerToggle.syncState();
 
         status = findViewById(R.id.Status);
         logout = findViewById(R.id.logout);
